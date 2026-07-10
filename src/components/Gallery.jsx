@@ -5,7 +5,7 @@ import sea2 from "../assets/searesortpool1.webp";
 import sea3 from "../assets/searesortban1.webp";
 import sea4 from "../assets/searesortgal1.webp";
 
-import grand1 from "../assets/grand1about.webp";
+import grand1 from "../assets/gal1grandsea.webp";
 import grand2 from "../assets/grandsealobby.jpg";
 import grand3 from "../assets/gal8grandsea.webp";
 import grand4 from "../assets/grand2about.webp";
