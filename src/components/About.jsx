@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import img1 from "../assets/sea1about.webp";
 import img2 from "../assets/sea2about.webp";
-import img3 from "../assets/grand1about.webp";
+import img3 from "../assets/gal1grandsea.webp";
 import img4 from "../assets/grand2about.webp";
 import img5 from "../assets/gang1about.webp";
 import img6 from "../assets/gang2about.webp";
@@ -70,7 +70,7 @@ function About() {
 
       setTopIndex((prev) => (prev + 1) % topImages.length);
 
-    }, 4000);
+    }, 8000);
 
     return () => clearInterval(interval);
 
@@ -84,7 +84,7 @@ function About() {
 
       setBottomIndex((prev) => (prev + 1) % bottomImages.length);
 
-    }, 4500);
+    }, 9000);
 
     return () => clearInterval(interval);
 
