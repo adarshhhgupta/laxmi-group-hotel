@@ -10,6 +10,7 @@ import Feedback from "./components/Feedback";
 import Offers from "./components/Offers";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Events from "./components/Events";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Properties />
       <Experiences />
+      <Events />
       <Gallery />
       <Culinary />
       <Feedback />

@@ -154,7 +154,7 @@ function About() {
         >
 
           <p className="about-subtitle">
-            OUR STORY
+            ABOUT US
           </p>
 
           <h2>
@@ -164,7 +164,13 @@ function About() {
           </h2>
 
           <p>
-            Laxmi Hotels brings you the finest hospitality experience from beaches to mountains. Every stay is designed to give comfort, elegance and unforgettable memories.
+            Laxmi Group of Hotels was established in 2011 with a vision to create memorable hospitality experiences built on trust, comfort, and genuine care. Over the years, we have grown into a trusted hospitality brand, welcoming 100,000+ guests across our destinations.
+
+With hotels in Gangtok, North Sikkim, and Digha, we offer thoughtfully designed stays that combine warm hospitality, modern comforts, and the unique charm of each destination. Whether guests are seeking a peaceful mountain retreat or a relaxing seaside vacation, every stay is crafted to exceed expectations.
+
+At Laxmi Group of Hotels, we believe that true hospitality begins with earning our guests' trust. Every interaction is guided by our commitment to quality service, attention to detail, and creating experiences that inspire guests to return.
+
+As we continue to grow, our mission remains the same: to deliver exceptional hospitality, build lasting relationships, and create unforgettable memories for every guest who chooses Laxmi Group of Hotels.
           </p>
 
           <div
