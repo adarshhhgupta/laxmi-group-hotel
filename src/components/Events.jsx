@@ -1,11 +1,12 @@
 import React from "react";
 
-import event1 from "../assets/gal1grandsea.webp";
-import event2 from "../assets/gal2grandsea.webp";
-import event3 from "../assets/gal3grandsea.webp";
-import event4 from "../assets/gal4grandsea.webp";
-import event5 from "../assets/gal5grandsea.webp";
-import event6 from "../assets/gal6grandsea.webp";
+import event1 from "../assets/event1.webp";
+import event2 from "../assets/event2.webp";
+import event3 from "../assets/event3.webp";
+import event4 from "../assets/event4.webp";
+import event5 from "../assets/event5.webp";
+import event6 from "../assets/event6.webp";
+import event7 from "../assets/event7.webp";
 
 const Events = () => {
   const occasions = [
@@ -26,6 +27,7 @@ const Events = () => {
     event4,
     event5,
     event6,
+    event7,
   ];
 
   return (
