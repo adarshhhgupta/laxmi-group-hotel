@@ -5,7 +5,7 @@ function Culinary() {
     <section id="culinary" className="culinary">
       <div className="culinary-container">
 
-        {/* LEFT CONTENT */}
+        {/* leftsideinformation */}
         <div className="culinary-content">
 
           <p className="culinary-subtitle">CULINARY EXCELLENCE</p>
@@ -25,17 +25,17 @@ function Culinary() {
             Tibetan warmth, and sophisticated continental cuisine.
           </p>
 
-          {/* TAGS */}
+          {/* allfoodoptions */}
           <div className="culinary-tags">
 
-            {/* FIRST ROW */}
+            {/* firstrow */}
             <div className="culinary-tags-row">
               <span className="active">BENGALI</span>
               <span>SEAFOOD</span>
               <span>CONTINENTAL</span>
             </div>
 
-            {/* SECOND ROW */}
+            {/* secondrow */}
             <div className="culinary-tags-row bottom">
               <span>PAN-ASIAN</span>
               <span>NORTH INDIAN</span>
@@ -45,15 +45,15 @@ function Culinary() {
 
         </div>
 
-        {/* RIGHT VISUAL */}
+        {/* rightsideinformation */}
         <div className="culinary-visual">
 
           <div className="circle-wrapper">
 
-            {/* 🔥 ROTATING CIRCLE */}
+            {/* circlerotating */}
             <div className="circle-rotating"></div>
 
-            {/* 🔥 STATIC CUTLERY (NOT ROTATING) */}
+            {/* platesymbolstill */}
             <div className="center-icon">🍽️</div>
 
           </div>

@@ -27,7 +27,7 @@ function About() {
   const [topIndex, setTopIndex] = useState(0);
   const [bottomIndex, setBottomIndex] = useState(0);
 
-  /* Scroll Animation */
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -62,7 +62,7 @@ function About() {
     return () => observer.disconnect();
   }, []);
 
-  /* Top Slider */
+  
 
   useEffect(() => {
 
@@ -76,7 +76,7 @@ function About() {
 
   }, []);
 
-  /* Bottom Slider */
+  
 
   useEffect(() => {
 
@@ -95,14 +95,14 @@ function About() {
 
       <div className="about-container">
 
-        {/* IMAGE SECTION */}
+        {/* Image section */}
 
         <div
           ref={imageRef}
           className="about-image-stack fade-left"
         >
 
-          {/* TOP CARD */}
+          {/* Top Card */}
 
           <div className="about__card-blue">
 
@@ -115,7 +115,7 @@ function About() {
 
           </div>
 
-          {/* BADGE */}
+          {/* Badge */}
 
           <div className="about__badge">
 
@@ -131,7 +131,7 @@ function About() {
 
           </div>
 
-          {/* BOTTOM CARD */}
+          {/* Bottom card */}
 
           <div className="about__card-gold">
 
@@ -146,7 +146,7 @@ function About() {
 
         </div>
 
-        {/* TEXT */}
+        {/* Text */}
 
         <div
           ref={textRef}

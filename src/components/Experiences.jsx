@@ -40,7 +40,7 @@ function Experiences() {
 
       <div className="exp-container">
 
-        {/* HEADING */}
+        {/* headingtitle */}
         <p className="exp-subtitle">
           WHAT WE OFFER
         </p>
@@ -50,7 +50,7 @@ function Experiences() {
           Like No Other
         </h2>
 
-        {/* CARDS */}
+        {/* experiencesoption */}
         <div className="exp-grid">
 
           {data.map((item, index) => (
@@ -71,7 +71,7 @@ function Experiences() {
 
         </div>
 
-        {/* MOBILE SWIPE TEXT */}
+        {/* mobileviewswipping */}
         <div className="swipe-hint mobile-only">
   ↔ Swipe to explore ↔
 </div>

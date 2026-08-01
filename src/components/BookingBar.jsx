@@ -5,10 +5,10 @@ function BookingBar() {
     <section className="booking-bar">
       <div className="booking-container">
 
-        {/* 🔥 LEFT SIDE FIELDS */}
+        
         <div className="booking-fields">
 
-          {/* DESTINATION */}
+          {/* destination */}
           <div className="booking-field">
             <label>DESTINATION</label>
             <select>
@@ -17,19 +17,19 @@ function BookingBar() {
             </select>
           </div>
 
-          {/* CHECK IN */}
+          {/* check in*/}
           <div className="booking-field">
             <label>CHECK IN</label>
             <input type="date" />
           </div>
 
-          {/* CHECK OUT */}
+          {/* check out */}
           <div className="booking-field">
             <label>CHECK OUT</label>
             <input type="date" />
           </div>
 
-          {/* GUESTS */}
+          {/* guests */}
           <div className="booking-field">
             <label>GUESTS</label>
             <select>

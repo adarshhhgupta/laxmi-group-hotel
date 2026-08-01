@@ -31,7 +31,7 @@ function Contact() {
     <section id="contact" className="contact">
       <div className="contact-container">
 
-        {/* LEFT SIDE */}
+        {/* left side */}
         <div className="contact-left">
 
           <p className="contact-subtitle">GET IN TOUCH</p>
@@ -43,7 +43,7 @@ function Contact() {
 
           <div className="contact-divider"></div>
 
-          {/* SEA RESORT */}
+          {/* sea resort */}
           <div className="contact-block">
             <h3>Sea Resort, Digha</h3>
             <p>Dheusagar Park, New Digha</p>
@@ -62,7 +62,7 @@ function Contact() {
 
           <div className="contact-line"></div>
 
-          {/* HOTEL GRAND SEA */}
+          {/* grandsea */}
           <div className="contact-block">
             <h3>Hotel Grand Sea, New Digha</h3>
             <p>Dheusagar Park, New Digha</p>
@@ -81,7 +81,7 @@ function Contact() {
 
           <div className="contact-line"></div>
 
-          {/* HOTEL UTPALA */}
+          {/* utpala */}
           <div className="contact-block">
             <h3>Hotel Utpala, Gangtok</h3>
             <p>MG Marg, Pantaloons Showroom, Near Star Cinema Hall</p>
@@ -100,7 +100,8 @@ function Contact() {
 
           <div className="contact-line"></div>
 
-          {/* CENTRAL RESERVATIONS */}
+          {/* centralreservation */}
+
           <div className="contact-block">
             <h3>Central Reservations</h3>
             <p>laxmigroupofhotel2024@gmail.com</p>
@@ -109,7 +110,8 @@ function Contact() {
 
         </div>
 
-        {/* RIGHT SIDE */}
+        {/* rightside */}
+        
         <div className="contact-right">
 
           <form
