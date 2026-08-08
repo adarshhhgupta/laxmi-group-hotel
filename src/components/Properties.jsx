@@ -60,10 +60,13 @@ function Properties() {
 
             <div className="property-card">
 
-              <div
-                className="property-image"
-                style={{ backgroundImage: `url(${img1})` }}
-              ></div>
+              <img
+  className="property-image"
+  src={img1}
+  alt="Sea Resort Digha"
+  loading="lazy"
+  decoding="async"
+/>
 
               <div className="property-info">
 
@@ -103,10 +106,13 @@ function Properties() {
 
             <div className="property-card">
 
-              <div
-                className="property-image"
-                style={{ backgroundImage: `url(${mountain})` }}
-              ></div>
+              <img
+  className="property-image"
+  src={mountain}
+  alt="Hotel Grand Sea Digha"
+  loading="lazy"
+  decoding="async"
+/>
 
               <div className="property-info">
 
@@ -146,10 +152,13 @@ function Properties() {
 
             <div className="property-card">
 
-              <div
-                className="property-image"
-                style={{ backgroundImage: `url(${photo})` }}
-              ></div>
+              <img
+  className="property-image"
+  src={photo}
+  alt="Hotel Utpala Gangtok"
+  loading="lazy"
+  decoding="async"
+/>
 
               <div className="property-info">
 
@@ -189,10 +198,13 @@ function Properties() {
 
             <div className="property-card">
 
-              <div
-                className="property-image"
-                style={{ backgroundImage: `url(${lachung})` }}
-              ></div>
+              <img
+  className="property-image"
+  src={lachung}
+  alt="Hotel Utpala Lachung"
+  loading="lazy"
+  decoding="async"
+/>
 
               <div className="property-info">
 

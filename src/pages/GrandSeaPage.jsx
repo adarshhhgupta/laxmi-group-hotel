@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import hero from "../assets/grandsealobby.jpg";
+import hero from "../assets/grandsealobby.webp";
 import room1 from "../assets/signatureroomgrandsea.webp";
 import room2 from "../assets/eliteroomgrandsea.webp";
 import room3 from "../assets/executiveroomgrandsea.webp";

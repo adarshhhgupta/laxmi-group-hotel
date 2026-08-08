@@ -9,7 +9,7 @@ import "./index.css";
 import SeaResortPage from "./pages/SeaResortPage";
 import GrandSeaPage from "./pages/GrandSeaPage";
 import UtpalaPage from "./pages/UtpalaPage";
-
+import ScrollToTop from "./components/ScrollToTop";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
 

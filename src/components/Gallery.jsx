@@ -6,7 +6,7 @@ import sea3 from "../assets/searesortban1.webp";
 import sea4 from "../assets/searesortgal1.webp";
 
 import grand1 from "../assets/gal1grandsea.webp";
-import grand2 from "../assets/grandsealobby.jpg";
+import grand2 from "../assets/grandsealobby.webp";
 import grand3 from "../assets/gal8grandsea.webp";
 import grand4 from "../assets/grand2about.webp";
 
@@ -109,12 +109,13 @@ function Gallery() {
               key={index}
             >
 
-              <div
-                className="gallery-image"
-                style={{
-                  backgroundImage: `url(${item.image})`,
-                }}
-              ></div>
+              <img
+  className="gallery-image"
+  src={item.image}
+  alt={`${item.title} - ${item.location}`}
+  loading="lazy"
+  decoding="async"
+/>
 
               <div className="gallery-content">
 
