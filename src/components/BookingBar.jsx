@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaMapMarkerAlt,
   FaCalendarAlt,
   FaUserFriends,
   FaWhatsapp,
+  FaChevronDown,
+  FaChevronUp,
 } from "react-icons/fa";
 
 function BookingBar() {
+  const [mobileExpanded, setMobileExpanded] = useState(false);
+
   return (
     <section className="booking-bar">
-      <div className="booking-container">
+      {/* MOBILE COMPACT TRIGGER BUTTON (Only visible on mobile/tablet) */}
+      <button
+        className="mobile-booking-toggle"
+        onClick={() => setMobileExpanded(!mobileExpanded)}
+        aria-expanded={mobileExpanded}
+      >
+        <div className="toggle-left">
+          <FaCalendarAlt className="toggle-icon" />
+          <span>CHECK AVAILABILITY & RATES</span>
+        </div>
+        <div className="toggle-right">
+          {mobileExpanded ? <FaChevronUp /> : <FaChevronDown />}
+        </div>
+      </button>
+
+      {/* BOOKING CONTAINER FORM */}
+      <div className={`booking-container ${mobileExpanded ? "mobile-open" : ""}`}>
         <div className="booking-fields">
           {/* DESTINATION */}
           <div className="booking-field">

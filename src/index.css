@@ -698,33 +698,15 @@ body {
   box-shadow: 0 12px 35px rgba(201, 168, 76, 0.5);
 }
 
-/* DESKTOP VS MOBILE BOOKING BAR DISPLAY CONTROL */
-.desktop-booking-bar {
-  display: block;
-  width: 100%;
-}
-
-.mobile-booking-bar {
+/* MOBILE COMPACT BOOKING TRIGGER BUTTON */
+.mobile-booking-toggle {
   display: none;
 }
 
 /* RESPONSIVE TABLET & MOBILE */
 @media screen and (max-width: 1024px) {
-  .desktop-booking-bar {
-    display: none;
-  }
-
-  .mobile-booking-bar {
-    display: block;
-    position: relative;
-    z-index: 30;
-    margin-top: -35px;
-    padding: 0 16px;
-    margin-bottom: 20px;
-  }
-
   .hero {
-    height: 80vh;
+    height: 85vh;
     min-height: 520px;
     max-height: 640px;
     padding-top: 90px;
@@ -740,19 +722,79 @@ body {
   }
 
   .booking-bar {
-    margin-top: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+    max-width: 600px;
+    z-index: 25;
+    margin: 0;
     padding: 0;
+  }
+
+  .mobile-booking-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    height: 48px;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #0A1628 0%, #112238 100%);
+    border: 1.5px solid #C9A84C;
+    border-radius: 24px;
+    color: #C9A84C;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  .mobile-booking-toggle:hover,
+  .mobile-booking-toggle:active {
+    background: linear-gradient(135deg, #112238 0%, #1A304D 100%);
+    box-shadow: 0 12px 35px rgba(201, 168, 76, 0.3);
+  }
+
+  .toggle-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .toggle-icon {
+    font-size: 15px;
+    color: #C9A84C;
+  }
+
+  .toggle-right {
+    font-size: 13px;
+    color: #C9A84C;
   }
 
   .booking-container {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, margin 0.3s ease;
+    margin-top: 0;
+    padding: 0;
     flex-direction: column;
-    padding: 20px;
-    gap: 16px;
     background: #0A1628;
     border: 1px solid rgba(201, 168, 76, 0.45);
     border-radius: 16px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  .booking-container.mobile-open {
+    max-height: 520px;
+    opacity: 1;
+    pointer-events: auto;
+    margin-top: 10px;
+    padding: 20px 18px;
   }
 
   .booking-fields {
@@ -770,29 +812,32 @@ body {
 
   .about-container {
     flex-direction: column;
+    align-items: flex-start;
     gap: 50px;
     padding: 0 24px;
   }
 
   .about-image-stack {
-    margin-right: 0;
-    width: 420px;
-    height: 420px;
+    margin-left: 0;
+    margin-right: auto;
+    width: 360px;
+    height: 360px;
   }
 
   .about__badge {
-    top: 100px;
-    right: 15px;
+    top: 90px;
+    left: 210px;
+    right: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: 75vh;
+    height: 80vh;
     min-height: 480px;
     max-height: 580px;
     padding-top: 85px;
-    padding-bottom: 20px;
+    padding-bottom: 75px;
   }
 
   .hero-content {
@@ -861,41 +906,53 @@ body {
     font-size: 12.5px;
   }
 
-  /* ABOUT SECTION MOBILE OPTIMIZATIONS */
+  /* ABOUT SECTION STRICT MOBILE LEFT SHIFT */
   .about {
     padding: 60px 0;
   }
 
   .about-container {
     flex-direction: column;
+    align-items: flex-start;
     gap: 40px;
     padding: 0 16px;
+    overflow: hidden;
   }
 
   .about-image-stack {
-    width: 100%;
-    max-width: 320px;
-    height: 320px;
-    margin: 0 auto;
+    width: 280px;
+    height: 290px;
+    margin-left: 0;
+    margin-right: auto;
+    position: relative;
   }
 
   .about__card-blue {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
   }
 
   .about__card-gold {
-    width: 220px;
-    height: 220px;
-    right: 0;
+    width: 190px;
+    height: 190px;
+    bottom: 0;
+    left: 45px;
   }
 
   .about__badge {
-    top: 80px;
-    right: 15px;
-    padding: 10px 10px;
-    min-width: 90px;
+    position: absolute;
+    top: 65px;
+    left: 160px;
+    right: auto;
+    padding: 8px 8px;
+    min-width: 88px;
     border-radius: 6px;
+    background: #0A1628;
+    border: 1px solid #C9A84C;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    z-index: 5;
   }
 
   .about__badge-number {
