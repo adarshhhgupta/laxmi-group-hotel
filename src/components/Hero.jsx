@@ -22,67 +22,76 @@ function Hero() {
   }, [slides.length]);
 
   return (
-    <section id="hero" className="hero">
-      {/* SLIDES */}
-      <div className="hero-slides">
-        {slides.map((s, i) => (
-          <div
-            key={i}
-            className={`slide ${slide === i ? "active" : ""}`}
-            style={{
-              backgroundImage: `url(${s})`,
-            }}
-          ></div>
-        ))}
-      </div>
-
-      {/* OVERLAY */}
-      <div className="hero-overlay"></div>
-
-      {/* CENTER CONTENT */}
-      <div className="hero-content">
-        <div className="hero-badge">
-          <span className="hero-badge-dot"></span>
-          <p className="hero-pretitle">LAXMI GROUP OF HOTEL</p>
-        </div>
-
-        <h1 className="hero-title">
-          Where the Sea <br />
-          Meets the <span>Sky</span>
-        </h1>
-
-        <p className="hero-subtitle">
-          Digha · Gangtok | Two Destinations, One Soul
-        </p>
-
-        {/* BUTTONS */}
-        <div className="hero-buttons">
-          <a href="#properties" className="btn-primary">
-            <span>Explore Hotels</span>
-            <FaArrowRight className="btn-icon" />
-          </a>
-
-          <a href="#offers" className="btn-outline">
-            <span>Explore Rooms</span>
-          </a>
-        </div>
-
-        {/* SLIDE INDICATORS */}
-        <div className="hero-indicators">
-          {slides.map((_, i) => (
-            <button
+    <>
+      <section id="hero" className="hero">
+        {/* SLIDES */}
+        <div className="hero-slides">
+          {slides.map((s, i) => (
+            <div
               key={i}
-              className={`indicator-bar ${slide === i ? "active" : ""}`}
-              onClick={() => setSlide(i)}
-              aria-label={`Go to slide ${i + 1}`}
-            />
+              className={`slide ${slide === i ? "active" : ""}`}
+              style={{
+                backgroundImage: `url(${s})`,
+              }}
+            ></div>
           ))}
         </div>
-      </div>
 
-      {/* DOCKED BOOKING BAR */}
-      <BookingBar />
-    </section>
+        {/* OVERLAY */}
+        <div className="hero-overlay"></div>
+
+        {/* CENTER CONTENT */}
+        <div className="hero-content">
+          <div className="hero-badge">
+            <span className="hero-badge-dot"></span>
+            <p className="hero-pretitle">LAXMI GROUP OF HOTEL</p>
+          </div>
+
+          <h1 className="hero-title">
+            Where the Sea <br />
+            Meets the <span>Sky</span>
+          </h1>
+
+          <p className="hero-subtitle">
+            Digha · Gangtok | Two Destinations, One Soul
+          </p>
+
+          {/* BUTTONS */}
+          <div className="hero-buttons">
+            <a href="#properties" className="btn-primary">
+              <span>Explore Hotels</span>
+              <FaArrowRight className="btn-icon" />
+            </a>
+
+            <a href="#offers" className="btn-outline">
+              <span>Explore Rooms</span>
+            </a>
+          </div>
+
+          {/* SLIDE INDICATORS */}
+          <div className="hero-indicators">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                className={`indicator-bar ${slide === i ? "active" : ""}`}
+                onClick={() => setSlide(i)}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* DESKTOP DOCKED BOOKING BAR */}
+        <div className="desktop-booking-bar">
+          <BookingBar />
+        </div>
+      </section>
+
+      {/* MOBILE FLOATING BOOKING BAR */}
+      <div className="mobile-booking-bar">
+        <BookingBar />
+      </div>
+    </>
   );
 }
 

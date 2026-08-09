@@ -698,39 +698,68 @@ body {
   box-shadow: 0 12px 35px rgba(201, 168, 76, 0.5);
 }
 
+/* DESKTOP VS MOBILE BOOKING BAR DISPLAY CONTROL */
+.desktop-booking-bar {
+  display: block;
+  width: 100%;
+}
+
+.mobile-booking-bar {
+  display: none;
+}
+
 /* RESPONSIVE TABLET & MOBILE */
 @media screen and (max-width: 1024px) {
+  .desktop-booking-bar {
+    display: none;
+  }
+
+  .mobile-booking-bar {
+    display: block;
+    position: relative;
+    z-index: 30;
+    margin-top: -35px;
+    padding: 0 16px;
+    margin-bottom: 20px;
+  }
+
   .hero {
-    height: auto;
-    min-height: 85vh;
-    padding-top: 100px;
-    padding-bottom: 40px;
+    height: 80vh;
+    min-height: 520px;
+    max-height: 640px;
+    padding-top: 90px;
+    padding-bottom: 30px;
   }
 
   .hero-title {
-    font-size: 48px;
+    font-size: 44px;
   }
 
   .hero-subtitle {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .booking-bar {
-    margin-top: 24px;
-    padding: 0 24px;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .booking-container {
     flex-direction: column;
     padding: 20px;
-    gap: 18px;
+    gap: 16px;
+    background: #0A1628;
+    border: 1px solid rgba(201, 168, 76, 0.45);
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
   }
 
   .booking-fields {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    gap: 16px;
+    gap: 14px;
   }
 
   .booking-btn {
@@ -752,16 +781,18 @@ body {
   }
 
   .about__badge {
-    right: 0px;
+    top: 100px;
+    right: 15px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: auto;
-    min-height: 75vh;
-    padding-top: 90px;
-    padding-bottom: 30px;
+    height: 75vh;
+    min-height: 480px;
+    max-height: 580px;
+    padding-top: 85px;
+    padding-bottom: 20px;
   }
 
   .hero-content {
@@ -769,63 +800,48 @@ body {
   }
 
   .hero-badge {
-    padding: 6px 16px;
-    margin-bottom: 16px;
+    padding: 5px 14px;
+    margin-bottom: 12px;
   }
 
   .hero-pretitle {
-    font-size: 11px;
-    letter-spacing: 3px;
+    font-size: 10.5px;
+    letter-spacing: 2.5px;
   }
 
   .hero-title {
-    font-size: 34px;
+    font-size: 32px;
     line-height: 1.2;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   .hero-subtitle {
-    font-size: 14px;
-    letter-spacing: 1px;
-    margin-bottom: 22px;
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
   }
 
   .hero-buttons {
     flex-direction: column;
     width: 100%;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .btn-primary,
   .btn-outline {
     width: 100%;
-    height: 48px;
-    padding: 0 20px;
-    font-size: 12px;
-    letter-spacing: 2px;
-  }
-
-  .booking-bar {
-    margin-top: 20px;
+    height: 46px;
     padding: 0 16px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .booking-container {
-    padding: 18px 16px;
-    border-radius: 14px;
-    gap: 14px;
-    background: rgba(10, 20, 36, 0.94);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    font-size: 11.5px;
+    letter-spacing: 2px;
   }
 
   .booking-fields {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 14px;
+    gap: 12px;
   }
 
   .booking-field {
@@ -847,72 +863,72 @@ body {
 
   /* ABOUT SECTION MOBILE OPTIMIZATIONS */
   .about {
-    padding: 80px 0;
+    padding: 60px 0;
   }
 
   .about-container {
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
     padding: 0 16px;
   }
 
   .about-image-stack {
     width: 100%;
-    max-width: 330px;
-    height: 330px;
+    max-width: 320px;
+    height: 320px;
     margin: 0 auto;
   }
 
   .about__card-blue {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
   }
 
   .about__card-gold {
-    width: 230px;
-    height: 230px;
+    width: 220px;
+    height: 220px;
     right: 0;
   }
 
   .about__badge {
-    top: 90px;
-    right: 0px;
-    padding: 12px 10px;
-    min-width: 95px;
+    top: 80px;
+    right: 15px;
+    padding: 10px 10px;
+    min-width: 90px;
     border-radius: 6px;
   }
 
   .about__badge-number {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .about__badge-label {
-    font-size: 8px;
+    font-size: 7.5px;
   }
 
   .about-content h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .about-content p {
-    font-size: 14.5px;
-    line-height: 1.75;
+    font-size: 14px;
+    line-height: 1.7;
   }
 
   .about-stats {
-    gap: 10px;
+    gap: 8px;
   }
 
   .stat-box {
-    padding: 14px 8px;
+    padding: 12px 6px;
   }
 
   .stat-box h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .stat-box p {
-    font-size: 10px;
+    font-size: 9.5px;
     letter-spacing: 1px;
   }
 }
