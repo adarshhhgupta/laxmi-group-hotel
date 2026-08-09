@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import BookingBar from "./components/BookingBar";
 import About from "./components/About";
 import Properties from "./components/Properties";
 import Experiences from "./components/Experiences";
@@ -16,7 +15,6 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <BookingBar />
       <About />
       <Properties />
       <Experiences />

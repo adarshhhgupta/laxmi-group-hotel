@@ -1,10 +1,12 @@
+import React, { useEffect, useState } from "react";
 import img1 from "../assets/sea1about.webp";
 import img2 from "../assets/searesortpool2.webp";
 import img3 from "../assets/gal1grandsea.webp";
 import img4 from "../assets/grandseainterior.webp";
 import img5 from "../assets/gal9grandsea.webp";
 import img6 from "../assets/gal8grandsea.webp";
-import { useEffect, useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
+import BookingBar from "./BookingBar";
 
 function Hero() {
   const [slide, setSlide] = useState(0);
@@ -14,14 +16,13 @@ function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setSlide((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    }, 4500);
 
     return () => clearInterval(interval);
   }, [slides.length]);
 
   return (
     <section id="hero" className="hero">
-
       {/* SLIDES */}
       <div className="hero-slides">
         {slides.map((s, i) => (
@@ -30,8 +31,6 @@ function Hero() {
             className={`slide ${slide === i ? "active" : ""}`}
             style={{
               backgroundImage: `url(${s})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
             }}
           ></div>
         ))}
@@ -40,12 +39,12 @@ function Hero() {
       {/* OVERLAY */}
       <div className="hero-overlay"></div>
 
-      {/* CONTENT */}
+      {/* CENTER CONTENT */}
       <div className="hero-content">
-
-        <p className="hero-pretitle">
-          LAXMI GROUP OF HOTEL
-        </p>
+        <div className="hero-badge">
+          <span className="hero-badge-dot"></span>
+          <p className="hero-pretitle">LAXMI GROUP OF HOTEL</p>
+        </div>
 
         <h1 className="hero-title">
           Where the Sea <br />
@@ -58,21 +57,31 @@ function Hero() {
 
         {/* BUTTONS */}
         <div className="hero-buttons">
-
-          {/* EXPLORE HOTELS */}
           <a href="#properties" className="btn-primary">
-            Explore Hotels
+            <span>Explore Hotels</span>
+            <FaArrowRight className="btn-icon" />
           </a>
 
-          {/* VIEW OFFERS */}
           <a href="#offers" className="btn-outline">
-            Explore Rooms
+            <span>Explore Rooms</span>
           </a>
-
         </div>
 
+        {/* SLIDE INDICATORS */}
+        <div className="hero-indicators">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              className={`indicator-bar ${slide === i ? "active" : ""}`}
+              onClick={() => setSlide(i)}
+              aria-label={`Go to slide ${i + 1}`}
+            />
+          ))}
+        </div>
       </div>
 
+      {/* DOCKED BOOKING BAR */}
+      <BookingBar />
     </section>
   );
 }
