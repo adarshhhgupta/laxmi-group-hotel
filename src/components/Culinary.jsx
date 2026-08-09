@@ -28,20 +28,19 @@ function Culinary() {
           {/* allfoodoptions */}
           <div className="culinary-tags">
 
-            {/* firstrow */}
-            <div className="culinary-tags-row">
-              <span className="active">BENGALI</span>
-              <span>SEAFOOD</span>
-              <span>CONTINENTAL</span>
-            </div>
+  <div className="culinary-tags-row">
+    <span>BENGALI</span>
+    <span>SEAFOOD</span>
+    <span>CONTINENTAL</span>
+  </div>
 
-            {/* secondrow */}
-            <div className="culinary-tags-row bottom">
-              <span>PAN-ASIAN</span>
-              <span>NORTH INDIAN</span>
-            </div>
+  <div className="culinary-tags-row bottom">
+    <span>PAN-ASIAN</span>
+    <span>NORTH INDIAN</span>
+    <span>SOUTH INDIAN</span>
+  </div>
 
-          </div>
+</div>
 
         </div>
 

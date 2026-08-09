@@ -1,5 +1,12 @@
 import React from "react";
-import logo from "../assets/laxmilogo.webp"; 
+import logo from "../assets/laxmilogo.webp";
+
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 function Footer() {
   return (
     <footer className="footer">
@@ -7,52 +14,54 @@ function Footer() {
 
         {/* LEFT */}
        <div className="footer-left">
-  <img src={logo} alt="Laxmi Logo" className="footer-logo" />
 
-  <p className="footer-desc">
-    Where every shoreline tells a story and every mountain holds a secret.
-    Experience India’s most captivating destinations through the warmth of Laxmi hospitality.
+  <p className="footer-description">
+    Where every shoreline tells a story and every
+    mountain holds a secret. Experience India’s most
+    captivating destinations through the warmth of
+    Laxmi hospitality.
   </p>
 
-  <div className="social-icons">
+  <div className="social-links">
 
-  <a
-    href="https://www.facebook.com/share/1D5wDpUGs8/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Facebook"
-  >
-    f
-  </a>
+    <a
+      href="https://www.facebook.com/share/1D5wDpUGs8/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+    >
+      <FaFacebookF />
+    </a>
 
-  <a
-    href="https://www.linkedin.com/in/tanishq-jaiswal-361024387?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn"
-  >
-    li
-  </a>
+    <a
+      href="https://www.linkedin.com/in/tanishq-jaiswal-361024387"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+    >
+      <FaLinkedinIn />
+    </a>
 
-  <a
-    href="https://www.instagram.com/laxmigroupof_hotels?igsh=cG44czduNXN5Nm9w"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Instagram"
-  >
-    ig
-  </a>
+    <a
+      href="https://www.instagram.com/laxmigroupof_hotels"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+    >
+      <FaInstagram />
+    </a>
 
-  <a
-    href="https://youtube.com/@laxmigroupofhotels-q9e?si=r00sELctvaG2tYdt"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="YouTube"
-  >
-    YT
-  </a>
+    <a
+      href="https://youtube.com/@laxmigroupofhotels-q9e"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="YouTube"
+    >
+      <FaYoutube />
+    </a>
 
-</div>
+  </div>
+
 </div>
 
         {/* OUR PROPERTIES */}
