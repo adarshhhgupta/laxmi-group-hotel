@@ -702,27 +702,28 @@ body {
 @media screen and (max-width: 1024px) {
   .hero {
     height: auto;
-    min-height: 100vh;
+    min-height: 85vh;
     padding-top: 100px;
     padding-bottom: 40px;
   }
 
   .hero-title {
-    font-size: 52px;
+    font-size: 48px;
   }
 
   .hero-subtitle {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .booking-bar {
-    margin-top: 30px;
+    margin-top: 24px;
+    padding: 0 24px;
   }
 
   .booking-container {
     flex-direction: column;
-    padding: 22px;
-    gap: 20px;
+    padding: 20px;
+    gap: 18px;
   }
 
   .booking-fields {
@@ -737,12 +738,28 @@ body {
     height: 50px;
     justify-content: center;
   }
+
+  .about-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 24px;
+  }
+
+  .about-image-stack {
+    margin-right: 0;
+    width: 420px;
+    height: 420px;
+  }
+
+  .about__badge {
+    right: 0px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .hero {
     height: auto;
-    min-height: 100vh;
+    min-height: 75vh;
     padding-top: 90px;
     padding-bottom: 30px;
   }
@@ -752,8 +769,8 @@ body {
   }
 
   .hero-badge {
-    padding: 6px 18px;
-    margin-bottom: 18px;
+    padding: 6px 16px;
+    margin-bottom: 16px;
   }
 
   .hero-pretitle {
@@ -762,28 +779,28 @@ body {
   }
 
   .hero-title {
-    font-size: 38px;
+    font-size: 34px;
     line-height: 1.2;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .hero-subtitle {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1px;
-    margin-bottom: 26px;
+    margin-bottom: 22px;
   }
 
   .hero-buttons {
     flex-direction: column;
     width: 100%;
-    gap: 12px;
-    margin-bottom: 24px;
+    gap: 10px;
+    margin-bottom: 20px;
   }
 
   .btn-primary,
   .btn-outline {
     width: 100%;
-    height: 50px;
+    height: 48px;
     padding: 0 20px;
     font-size: 12px;
     letter-spacing: 2px;
@@ -792,12 +809,16 @@ body {
   .booking-bar {
     margin-top: 20px;
     padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .booking-container {
     padding: 18px 16px;
     border-radius: 14px;
-    gap: 16px;
+    gap: 14px;
+    background: rgba(10, 20, 36, 0.94);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
   }
 
   .booking-fields {
@@ -822,6 +843,77 @@ body {
     width: 100%;
     height: 48px;
     font-size: 12.5px;
+  }
+
+  /* ABOUT SECTION MOBILE OPTIMIZATIONS */
+  .about {
+    padding: 80px 0;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 16px;
+  }
+
+  .about-image-stack {
+    width: 100%;
+    max-width: 330px;
+    height: 330px;
+    margin: 0 auto;
+  }
+
+  .about__card-blue {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about__card-gold {
+    width: 230px;
+    height: 230px;
+    right: 0;
+  }
+
+  .about__badge {
+    top: 90px;
+    right: 0px;
+    padding: 12px 10px;
+    min-width: 95px;
+    border-radius: 6px;
+  }
+
+  .about__badge-number {
+    font-size: 22px;
+  }
+
+  .about__badge-label {
+    font-size: 8px;
+  }
+
+  .about-content h2 {
+    font-size: 32px;
+  }
+
+  .about-content p {
+    font-size: 14.5px;
+    line-height: 1.75;
+  }
+
+  .about-stats {
+    gap: 10px;
+  }
+
+  .stat-box {
+    padding: 14px 8px;
+  }
+
+  .stat-box h3 {
+    font-size: 24px;
+  }
+
+  .stat-box p {
+    font-size: 10px;
+    letter-spacing: 1px;
   }
 }
 
