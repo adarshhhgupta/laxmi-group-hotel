@@ -1,11 +1,12 @@
 import React from "react";
+import { FaUtensils } from "react-icons/fa";
 
 function Culinary() {
   return (
     <section id="culinary" className="culinary">
       <div className="culinary-container">
 
-        {/* leftsideinformation */}
+        {/* culinary details */}
         <div className="culinary-content">
 
           <p className="culinary-subtitle">CULINARY EXCELLENCE</p>
@@ -25,35 +26,35 @@ function Culinary() {
             Tibetan warmth, and sophisticated continental cuisine.
           </p>
 
-          {/* allfoodoptions */}
+          {/* cuisine tags */}
           <div className="culinary-tags">
 
-  <div className="culinary-tags-row">
-    <span>BENGALI</span>
-    <span>SEAFOOD</span>
-    <span>CONTINENTAL</span>
-  </div>
+            <div className="culinary-tags-row">
+              <span>BENGALI</span>
+              <span>SEAFOOD</span>
+              <span>CONTINENTAL</span>
+            </div>
 
-  <div className="culinary-tags-row bottom">
-    <span>PAN-ASIAN</span>
-    <span>NORTH INDIAN</span>
-    <span>SOUTH INDIAN</span>
-  </div>
+            <div className="culinary-tags-row bottom">
+              <span>PAN-ASIAN</span>
+              <span>NORTH INDIAN</span>
+              <span>SOUTH INDIAN</span>
+            </div>
 
-</div>
+          </div>
 
         </div>
 
-        {/* rightsideinformation */}
+        {/* decorative icon wheel */}
         <div className="culinary-visual">
 
           <div className="circle-wrapper">
 
-            {/* circlerotating */}
             <div className="circle-rotating"></div>
 
-            {/* platesymbolstill */}
-            <div className="center-icon">🍽️</div>
+            <div className="center-icon">
+              <FaUtensils style={{ color: "#c9a84c", fontSize: "32px" }} />
+            </div>
 
           </div>
 

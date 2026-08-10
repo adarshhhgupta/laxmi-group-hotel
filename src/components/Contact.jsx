@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 function Contact() {
 
@@ -9,11 +10,11 @@ function Contact() {
     e.preventDefault();
 
     emailjs.sendForm(
-  "service_laxmigrouphotel",
-  "template_174dt98",
-  form.current,
-  "5z9z41vC_6foiVZAp"
-)
+      "service_laxmigrouphotel",
+      "template_174dt98",
+      form.current,
+      "5z9z41vC_6foiVZAp"
+    )
       .then(
         () => {
           alert("Enquiry Sent Successfully!");
@@ -31,7 +32,7 @@ function Contact() {
     <section id="contact" className="contact">
       <div className="contact-container">
 
-        {/* left side */}
+        {/* contact details */}
         <div className="contact-left">
 
           <p className="contact-subtitle">GET IN TOUCH</p>
@@ -51,18 +52,18 @@ function Contact() {
             <p className="contact-phone">+91 8910878588</p>
 
             <a
-  href="https://maps.app.goo.gl/ngEp2jY65SszDL1w9"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="location-btn"
->
-  📍 LOCATION
-</a>
+              href="https://maps.app.goo.gl/ngEp2jY65SszDL1w9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="location-btn"
+            >
+              <FaMapMarkerAlt /> LOCATION
+            </a>
           </div>
 
           <div className="contact-line"></div>
 
-          {/* grandsea */}
+          {/* hotel grand sea */}
           <div className="contact-block">
             <h3>Hotel Grand Sea, New Digha</h3>
             <p>Dheusagar Park, New Digha</p>
@@ -75,13 +76,13 @@ function Contact() {
               rel="noopener noreferrer"
               className="location-btn"
             >
-              📍 LOCATION
+              <FaMapMarkerAlt /> LOCATION
             </a>
           </div>
 
           <div className="contact-line"></div>
 
-          {/* utpala */}
+          {/* hotel utpala */}
           <div className="contact-block">
             <h3>Hotel Utpala, Gangtok</h3>
             <p>MG Marg, Pantaloons Showroom, Near Star Cinema Hall</p>
@@ -94,7 +95,7 @@ function Contact() {
               rel="noopener noreferrer"
               className="location-btn"
             >
-              📍 LOCATION
+              <FaMapMarkerAlt /> LOCATION
             </a>
           </div>
 

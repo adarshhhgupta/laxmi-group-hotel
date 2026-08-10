@@ -1,35 +1,36 @@
 import React from "react";
+import { FaUmbrellaBeach, FaMountain, FaSpa, FaUtensils, FaGlassCheers, FaLeaf } from "react-icons/fa";
 
 function Experiences() {
 
   const data = [
     {
-      icon: "🏖️",
+      icon: <FaUmbrellaBeach />,
       title: "Beach & Adventure",
       desc: "From sunrise yoga on Digha’s pristine shores to thrilling water sports — your days by the sea are packed with wonder."
     },
     {
-      icon: "🏔️",
+      icon: <FaMountain />,
       title: "Mountain Escapades",
       desc: "Guided treks through Sikkim’s forests, monastery visits, and breathtaking panoramic viewpoints."
     },
     {
-      icon: "🧘",
+      icon: <FaSpa />,
       title: "Spa & Wellness",
       desc: "Traditional Ayurvedic therapies and ocean-inspired treatments to restore balance and calm."
     },
     {
-      icon: "🍽️",
+      icon: <FaUtensils />,
       title: "Culinary Journeys",
       desc: "From beachside seafood to Himalayan flavors — every meal is an experience."
     },
     {
-      icon: "🎉",
+      icon: <FaGlassCheers />,
       title: "Weddings & Events",
       desc: "Celebrate your moments with ocean and mountain backdrops crafted into unforgettable events."
     },
     {
-      icon: "🌿",
+      icon: <FaLeaf />,
       title: "Cultural Immersion",
       desc: "Discover local traditions, crafts, and vibrant cultural experiences guided by experts."
     }
@@ -40,7 +41,7 @@ function Experiences() {
 
       <div className="exp-container">
 
-        {/* headingtitle */}
+        {/* section header */}
         <p className="exp-subtitle">
           WHAT WE OFFER
         </p>
@@ -50,7 +51,7 @@ function Experiences() {
           Like No Other
         </h2>
 
-        {/* experiencesoption */}
+        {/* experiences grid */}
         <div className="exp-grid">
 
           {data.map((item, index) => (
@@ -71,10 +72,10 @@ function Experiences() {
 
         </div>
 
-        {/* mobileviewswipping */}
+        {/* mobile swipe hint */}
         <div className="swipe-hint mobile-only">
-  ↔ Swipe to explore ↔
-</div>
+          Swipe to explore
+        </div>
 
       </div>
 

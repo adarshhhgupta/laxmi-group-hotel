@@ -4,14 +4,14 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* 🔥 MUST ADD */
+  /* must add */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* ⚡ PERFORMANCE OPTIMIZATION: Eliminate 300ms mobile tap delay for INP */
+/* performance optimization: eliminate 300ms mobile tap delay for inp */
 a,
 button,
 input,
@@ -29,7 +29,7 @@ textarea,
   -webkit-tap-highlight-color: transparent;
 }
 
-/* ⚡ GPU HARDWARE ACCELERATION (60fps/120fps zero frame drop UI) */
+/* gpu hardware acceleration (60fps/120fps zero frame drop ui) */
 .navbar,
 .slide,
 .about-slide-img,
@@ -45,7 +45,7 @@ textarea,
   backface-visibility: hidden;
 }
 
-/* ⚡ DEFERRED OFF-SCREEN RENDERING (Eliminates scroll stutter on long pages) */
+/* deferred off-screen rendering (eliminates scroll stutter on long pages) */
 .experiences,
 .gallery,
 .culinary,
@@ -73,7 +73,7 @@ img {
 html,
 body {
   overflow-x: hidden;
-  /* 🔥 prevents horizontal scroll */
+  /* prevents horizontal scroll */
 }
 
 section {
@@ -87,7 +87,7 @@ body {
   background: #FDFAF4;
 }
 
-/* HAMBURGER HIDDEN IN DESKTOP */
+/* hamburger hidden in desktop */
 .menu-toggle {
   display: none;
   font-size: 26px;
@@ -95,7 +95,7 @@ body {
   cursor: pointer;
 }
 
-/* MOBILE */
+/* mobile */
 @media (max-width: 768px) {
 
   .menu-toggle {
@@ -126,9 +126,7 @@ body {
   }
 }
 
-/* ============================================================
-   ULTRA-PREMIUM FLOATING GLASSMORPHIC NAVBAR
-   ============================================================ */
+/* ultra-premium floating glassmorphic navbar */
 
 .navbar {
   position: fixed;
@@ -163,7 +161,7 @@ body {
   box-sizing: border-box;
 }
 
-/* BRAND LOGO - EXTREME LEFT */
+/* brand logo - extreme left */
 .logo {
   display: flex;
   align-items: center;
@@ -216,7 +214,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* NAV LINKS */
+/* nav links */
 .nav-links {
   display: flex;
   align-items: center;
@@ -254,7 +252,7 @@ body {
   width: 100%;
 }
 
-/* WHATSAPP CTA BUTTON */
+/* whatsapp cta button */
 .nav-btn {
   display: flex;
   align-items: center;
@@ -289,7 +287,7 @@ body {
   box-shadow: 0 10px 25px rgba(201, 168, 76, 0.45);
 }
 
-/* HAMBURGER MENU BUTTON */
+/* hamburger menu button */
 .menu-toggle {
   display: none;
   background: none;
@@ -310,7 +308,7 @@ body {
   border-color: #C9A84C;
 }
 
-/* MOBILE / TABLET NAVBAR MEDIA QUERY */
+/* mobile / tablet navbar media query */
 @media screen and (max-width: 1024px) {
   .nav-links {
     gap: 20px;
@@ -373,9 +371,6 @@ body {
   }
 }
 
-
-
-
 .slide {
   position: absolute;
   width: 100%;
@@ -409,9 +404,7 @@ body {
   background: #0F2044;
 }
 
-/* ============================================================
-   GRAND FULL-SCREEN HERO (100VH) WITH DOCKED BOOKING BAR
-   ============================================================ */
+/* grand full-screen hero (100vh) with docked booking bar */
 
 .hero {
   position: relative;
@@ -596,7 +589,7 @@ body {
   box-shadow: 0 14px 35px rgba(255, 255, 255, 0.3);
 }
 
-/* HERO SLIDE INDICATORS */
+/* hero slide indicators */
 .hero-indicators {
   display: flex;
   justify-content: center;
@@ -620,9 +613,7 @@ body {
   box-shadow: 0 0 12px rgba(201, 168, 76, 0.8);
 }
 
-/* ============================================================
-   LUXURY DOCKED BOOKING BAR (INSIDE 100VH HERO)
-   ============================================================ */
+/* luxury docked booking bar (inside 100vh hero) */
 
 .booking-bar {
   position: relative;
@@ -759,7 +750,7 @@ body {
   box-shadow: 0 12px 35px rgba(201, 168, 76, 0.5);
 }
 
-/* MOBILE TRIGGER WRAPPER */
+/* mobile trigger wrapper */
 .mobile-trigger-wrapper {
   display: none;
 }
@@ -818,7 +809,7 @@ body {
   }
 }
 
-/* MOBILE BOOKING MODAL OVERLAY & CARD */
+/* mobile booking modal overlay & card */
 .mobile-booking-modal-overlay {
   position: fixed;
   inset: 0;
@@ -969,7 +960,7 @@ body {
   }
 }
 
-/* RESPONSIVE TABLET & MOBILE */
+/* responsive tablet & mobile */
 @media screen and (max-width: 1024px) {
   .hero {
     height: 100svh;
@@ -1084,14 +1075,14 @@ body {
     width: 36px;
   }
 
-  /* ── Section wrapper ── */
+  /* ── section wrapper ── */
   .about {
     padding: 52px 0 64px;
     overflow-x: hidden;
     overflow-y: visible;
   }
 
-  /* ── Grid → single column, image above text ── */
+  /* ── grid → single column, image above text ── */
   .about-container {
     flex-direction: column;
     align-items: center;
@@ -1100,19 +1091,17 @@ body {
     overflow: visible;
   }
 
-  /* ── Kill the slide-in transform so the stack is never off-screen ── */
+  /* ── kill the slide-in transform so the stack is never off-screen ── */
   .about-image-stack.fade-left,
   .about-image-stack.fade-left.show {
     transform: none !important;
     opacity: 1 !important;
   }
 
-  /* ─────────────────────────────────────────────
-     IMAGE STACK  — explicit height prevents collapse
-     Main image:   top-left  68% × 165px
-     Accent image: bottom-right  56% × 128px
-     Badge:        vertical gap, right edge
-  ───────────────────────────────────────────── */
+  /* image stack  — explicit height prevents collapse
+     main image:   top-left  68% × 165px
+     accent image: bottom-right  56% × 128px
+     badge:        vertical gap, right edge */
   .about-image-stack {
     position: relative !important;
     width: 100% !important;
@@ -1124,7 +1113,7 @@ body {
     flex-shrink: 0 !important;
   }
 
-  /* Main (large) image — top-left */
+  /* main (large) image — top-left */
   .about__card-blue {
     position: absolute !important;
     top: 0 !important;
@@ -1140,7 +1129,7 @@ body {
     z-index: 1 !important;
   }
 
-  /* Accent (thumbnail) image — bottom-right */
+  /* accent (thumbnail) image — bottom-right */
   .about__card-gold {
     position: absolute !important;
     bottom: 0 !important;
@@ -1156,7 +1145,7 @@ body {
     z-index: 2 !important;
   }
 
-  /* ── Badge — sits higher, between the two images ── */
+  /* ── badge — sits higher, between the two images ── */
   .about__badge {
     position: absolute !important;
     top: 55px !important;
@@ -1181,7 +1170,7 @@ body {
     z-index: 6 !important;
   }
 
-  /* Badge — large "15+" number */
+  /* badge — large "15+" number */
   .about__badge-number {
     font-family: 'Playfair Display', Georgia, serif !important;
     font-size: 18px !important;
@@ -1191,7 +1180,7 @@ body {
     display: block !important;
   }
 
-  /* Badge — thin gold separator line */
+  /* badge — thin gold separator line */
   .about__badge-number::after {
     content: '' !important;
     display: block !important;
@@ -1202,7 +1191,7 @@ body {
     opacity: 0.6 !important;
   }
 
-  /* Badge — "YEARS OF HOSPITALITY" label */
+  /* badge — "years of hospitality" label */
   .about__badge-label {
     font-size: 5.5px !important;
     font-weight: 700 !important;
@@ -1213,7 +1202,7 @@ body {
     display: block !important;
   }
 
-  /* ── Slide indicator dots — below the stack ── */
+  /* ── slide indicator dots — below the stack ── */
   .about-slide-controls {
     position: absolute !important;
     bottom: -32px !important;
@@ -1239,16 +1228,14 @@ body {
     box-shadow: none !important;
   }
 
-  /* ─────────────────────────────────────────────
-     TEXT CONTENT
-  ───────────────────────────────────────────── */
+  /* text content */
   .about-content {
     width: 100%;
     max-width: 100%;
     text-align: left;
   }
 
-  /* Eyebrow label — "ABOUT US" */
+  /* eyebrow label — "about us" */
   .about-subtitle {
     font-size: 8px;
     letter-spacing: 0.4em;
@@ -1262,7 +1249,7 @@ body {
     display: none;
   }
 
-  /* Main heading */
+  /* main heading */
   .about-content h2 {
     font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
     font-size: 24px;
@@ -1277,7 +1264,7 @@ body {
     font-style: italic;
   }
 
-  /* Body paragraphs */
+  /* body paragraphs */
   .about-content p {
     font-size: 13px;
     line-height: 1.85;
@@ -1286,9 +1273,7 @@ body {
     text-align: left;
   }
 
-  /* ─────────────────────────────────────────────
-     STAT CARDS — always 3-column grid
-  ───────────────────────────────────────────── */
+  /* stat cards — always 3-column grid */
   .about-stats {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -1310,7 +1295,7 @@ body {
     overflow: hidden;
   }
 
-  /* Gold bar at top of each stat card */
+  /* gold bar at top of each stat card */
   .stat-box::before {
     content: '';
     position: absolute;
@@ -1322,7 +1307,7 @@ body {
     border-radius: 8px 8px 0 0;
   }
 
-  /* Number */
+  /* number */
   .stat-box h3 {
     font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
     font-size: 22px;
@@ -1332,7 +1317,7 @@ body {
     margin-bottom: 4px;
   }
 
-  /* Label */
+  /* label */
   .stat-box p {
     font-size: 8px;
     letter-spacing: 0.2em;
@@ -1347,8 +1332,8 @@ body {
 /* end @media (max-width: 768px) */
 
 /* ══════════════════════════════════════════════
-   EXTRA-SMALL PHONES  (max-width: 380px)
-   Reduces image stack, badge, and heading sizes
+   extra-small phones  (max-width: 380px)
+   reduces image stack, badge, and heading sizes
    ══════════════════════════════════════════════ */
 @media (max-width: 380px) {
 
@@ -1383,7 +1368,7 @@ body {
 
 /* end @media (max-width: 380px) */
 
-/* ABOUT SECTION DESKTOP STYLES */
+/* about section desktop styles */
 .about {
   padding: 160px 0;
   background: linear-gradient(135deg, #FAF7F2 0%, #F3EBE0 100%);
@@ -1414,7 +1399,7 @@ body {
   z-index: 2;
 }
 
-/* IMAGE STACK CONTAINER */
+/* image stack container */
 .about-image-stack {
   position: relative;
   width: 480px;
@@ -1423,7 +1408,7 @@ body {
   margin-right: 20px;
 }
 
-/* TOP CARD */
+/* top card */
 .about__card-blue {
   position: absolute;
   top: 0;
@@ -1443,7 +1428,7 @@ body {
   box-shadow: 0 28px 55px rgba(15, 27, 41, 0.2);
 }
 
-/* BOTTOM CARD */
+/* bottom card */
 .about__card-gold {
   position: absolute;
   bottom: 0;
@@ -1463,7 +1448,7 @@ body {
   box-shadow: 0 30px 60px rgba(15, 27, 41, 0.25);
 }
 
-/* CROSSFADE IMAGE ENGINE */
+/* crossfade image engine */
 .about-slide-img {
   position: absolute;
   top: 0;
@@ -1482,7 +1467,7 @@ body {
   transform: scale(1);
 }
 
-/* SHINE OVERLAY */
+/* shine overlay */
 .card-overlay-shine {
   position: absolute;
   inset: 0;
@@ -1490,7 +1475,7 @@ body {
   pointer-events: none;
 }
 
-/* BADGE STYLING - PERFECT 1:1 SQUARE BADGE WITH ZERO SHADING */
+/* badge styling - perfect 1:1 square badge with zero shading */
 .about__badge {
   position: absolute;
   top: 110px;
@@ -1535,7 +1520,7 @@ body {
   display: block;
 }
 
-/* SLIDE NAVIGATION CONTROLS */
+/* slide navigation controls */
 .about-slide-controls {
   position: absolute;
   bottom: -35px;
@@ -1563,7 +1548,7 @@ body {
   box-shadow: 0 2px 8px rgba(201, 168, 76, 0.4);
 }
 
-/* CONTENT STYLING */
+/* content styling */
 .about-content {
   flex: 1;
   max-width: 620px;
@@ -1612,7 +1597,7 @@ body {
   margin-bottom: 18px;
 }
 
-/* STATS CARDS */
+/* stats cards */
 .about-stats {
   display: flex;
   gap: 20px;
@@ -1655,7 +1640,7 @@ body {
   margin: 0;
 }
 
-/* ANIMATIONS */
+/* animations */
 .fade-up,
 .fade-left,
 .fade-right {
@@ -1677,12 +1662,11 @@ body {
   transform: translate(0, 0);
 }
 
-/* SECTION */
 .properties {
   width: 100%;
   overflow-x: hidden;
   background: #071B2F;
-  /* ✅ original light color */
+  /* original light color */
   color: rgb(255, 255, 255);
   padding: 100px 0;
 }
@@ -1690,13 +1674,13 @@ body {
 .properties-container {
   width: 100%;
   max-width: 1900px;
-  /* 🔥 increase for large screens */
+  /* increase for large screens */
   margin: 0 auto;
   padding: 0 40px;
   /* prevents sticking to edges */
 }
 
-/* HEADER */
+/* header */
 .properties-header {
   flex-wrap: wrap;
   gap: 20px;
@@ -1775,7 +1759,6 @@ body {
   margin-bottom: 12px;
 }
 
-/* GRID */
 .properties-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(420px, 520px));
@@ -1828,7 +1811,7 @@ body {
   transition-delay: 0.4s;
 }
 
-/* WHEN VISIBLE */
+/* when visible */
 .properties-grid.show .property-card {
   opacity: 1;
   transform: translateX(0) scale(1);
@@ -1855,10 +1838,6 @@ body {
   transform: scale(1.08);
 }
 
-
-
-
-
 .property-info {
   height: 28%;
   padding: 26px;
@@ -1868,7 +1847,6 @@ body {
   flex-direction: column;
 }
 
-/* TEXT */
 .location {
   color: #c9a84c;
   font-size: 11px;
@@ -1951,20 +1929,18 @@ body {
   text-decoration: none;
 }
 
-/* SECTION */
 .experiences {
   padding: 140px 20px;
   background: #F5EBDD;
   text-align: center;
 }
 
-/* CONTAINER */
 .exp-container {
   max-width: 1300px;
   margin: 0 auto;
 }
 
-/* SUBTITLE */
+/* subtitle */
 .exp-subtitle {
   font-size: 12px;
   letter-spacing: 5px;
@@ -1972,7 +1948,6 @@ body {
   margin-bottom: 15px;
 }
 
-/* HEADING */
 .experiences h2 {
   font-size: 56px;
   font-family: 'Playfair Display', serif;
@@ -1988,14 +1963,12 @@ body {
   font-weight: 400;
 }
 
-/* GRID */
 .exp-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
 
-/* CARD */
 .exp-card {
   background: #ffffff;
   padding: 55px;
@@ -2005,7 +1978,6 @@ body {
   position: relative;
 }
 
-/* ICON */
 .exp-icon {
   width: 60px;
   height: 60px;
@@ -2020,11 +1992,10 @@ body {
   font-size: 22px;
 
   transition: all 0.4s ease;
-  /* 🔥 important */
+  /* important */
   transform: perspective(600px) rotateX(0deg) rotateY(0deg);
 }
 
-/* TITLE */
 .exp-card h3 {
   font-size: 24px;
   font-weight: 400;
@@ -2035,7 +2006,7 @@ body {
   display: inline-block;
 }
 
-/* ✨ UNDERLINE EFFECT */
+/* underline effect */
 .exp-card h3::after {
   content: "";
   position: absolute;
@@ -2049,7 +2020,7 @@ body {
   transition: width 0.3s ease;
 }
 
-/* DESCRIPTION */
+/* description */
 .exp-card p {
   font-size: 16px;
   line-height: 1.8;
@@ -2057,7 +2028,7 @@ body {
 
 }
 
-/* 🔥 HOVER EFFECT */
+/* hover effect */
 .exp-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
@@ -2073,9 +2044,7 @@ body {
   width: 100%;
 }
 
-/* ============================
-   GALLERY SECTION
-============================= */
+/* gallery section */
 
 .gallery {
   padding: 120px 40px;
@@ -2086,10 +2055,6 @@ body {
   max-width: 1700px;
   margin: auto;
 }
-
-/* ============================
-   HEADING
-============================= */
 
 .gallery-subtitle {
   display: flex;
@@ -2129,10 +2094,6 @@ body {
   font-size: 17px;
 }
 
-/* ============================
-   GRID
-============================= */
-
 .gallery-grid {
 
   display: grid;
@@ -2142,10 +2103,6 @@ body {
   gap: 28px;
 
 }
-
-/* ============================
-   CARD
-============================= */
 
 .gallery-card {
 
@@ -2169,10 +2126,6 @@ body {
 
 }
 
-/* ============================
-   IMAGE
-============================= */
-
 .gallery-image {
 
   width: 100%;
@@ -2192,10 +2145,6 @@ body {
   transform: scale(1.08);
 
 }
-
-/* ============================
-   TEXT
-============================= */
 
 .gallery-content {
 
@@ -2235,9 +2184,7 @@ body {
 
 }
 
-/* ============================
-   TABLET
-============================= */
+/* tablet */
 
 @media(max-width:1100px) {
 
@@ -2269,9 +2216,7 @@ body {
 
 }
 
-/* ============================
-   MOBILE
-============================= */
+/* mobile */
 
 @media(max-width:768px) {
 
@@ -2330,7 +2275,6 @@ body {
 
 }
 
-/* SECTION */
 .culinary {
   background: linear-gradient(135deg, #021b33, #001a2e);
   padding: 140px 60px;
@@ -2339,9 +2283,9 @@ body {
 
 .culinary-container {
   max-width: 1200px;
-  /* 🔥 controls center width */
+  /* controls center width */
   margin: 0 auto;
-  /* 🔥 centers content */
+  /* centers content */
 
   display: flex;
   justify-content: space-between;
@@ -2359,7 +2303,7 @@ body {
   /* prevents stretching too wide */
 }
 
-/* SUBTITLE */
+/* subtitle */
 .culinary-subtitle {
   display: flex;
   align-items: center;
@@ -2381,9 +2325,9 @@ body {
   font-family: 'Playfair Display', serif;
 
   font-size: 64px;
-  /* 🔥 bigger */
+  /* bigger */
   font-weight: 400;
-  /* 🔥 thinner (important fix) */
+  /* thinner (important fix) */
   line-height: 1.2;
 
   letter-spacing: 1.5px;
@@ -2399,7 +2343,7 @@ body {
   font-weight: 400;
 }
 
-/* LINE */
+/* line */
 .culinary-line {
   width: 80px;
   height: 2px;
@@ -2422,7 +2366,7 @@ body {
   max-width: 520px;
 }
 
-/* TAGS */
+/* tags */
 .culinary-tags {
   display: flex;
   flex-direction: column;
@@ -2468,7 +2412,7 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
-  /* 🔥 brings circle toward center */
+  /* brings circle toward center */
 }
 
 .circle-wrapper {
@@ -2514,21 +2458,19 @@ body {
   }
 }
 
-/* SECTION */
 .feedback {
   background: #fdf6ec;
   /* cream */
   padding: 120px 20px;
 }
 
-/* CONTAINER */
 .feedback-container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* HEADER */
+/* header */
 .feedback-subtitle {
   font-size: 12px;
   letter-spacing: 3px;
@@ -2548,19 +2490,19 @@ body {
   font-size: 48px;
 }
 
-/* CARDS CONTAINER */
+/* cards container */
 .feedback-cards {
   display: flex;
   gap: 50px;
-  /* 🔥 more spacing */
+  /* more spacing */
   margin-top: 80px;
 }
 
-/* PREMIUM CARD */
+/* premium card */
 .feedback-card {
   background: #ffffff;
   padding: 60px 45px;
-  /* 🔥 more spacious */
+  /* more spacious */
 
   text-align: left;
   position: relative;
@@ -2575,7 +2517,6 @@ body {
   /* soft base shadow */
 }
 
-/* TEXT */
 .feedback-card p {
   font-size: 18px;
   line-height: 1.9;
@@ -2586,7 +2527,7 @@ body {
   font-family: 'Jost', sans-serif;
 }
 
-/* STARS */
+/* stars */
 .stars {
   color: #c9a84c;
   margin-bottom: 25px;
@@ -2594,17 +2535,16 @@ body {
   font-size: 14px;
 }
 
-/* USER */
+/* user */
 .feedback-user {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-/* AVATAR */
 .avatar {
   width: 55px;
-  /* 🔥 bigger */
+  /* bigger */
   height: 55px;
 
   border-radius: 50%;
@@ -2620,27 +2560,26 @@ body {
   font-size: 18px;
 }
 
-/* NAME */
 .feedback-user h4 {
   font-size: 16px;
   margin-bottom: 4px;
   font-weight: 500;
 }
 
-/* LOCATION */
+/* location */
 .feedback-user span {
   font-size: 11px;
   letter-spacing: 2px;
   color: #c9a84c;
 }
 
-/* 🔥 PREMIUM HOVER */
+/* premium hover */
 .feedback-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
 }
 
-/* GOLD LINE ANIMATION */
+/* gold line animation */
 .feedback-card::after {
   content: "";
   position: absolute;
@@ -2662,8 +2601,6 @@ body {
   width: 100%;
 }
 
-
-
 .offers {
   padding: 120px 80px;
   background: #f6f1e7;
@@ -2674,8 +2611,6 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
-
-
 
 .offers-subtitle {
   letter-spacing: 4px;
@@ -2698,8 +2633,6 @@ body {
   color: #2f5c7c;
 }
 
-
-
 .offers-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2707,14 +2640,11 @@ body {
   width: 100%;
 }
 
-
-
 .offer-card {
   width: 100%;
   overflow: hidden;
   border-radius: 6px;
 }
-
 
 .offer-img {
   width: 100%;
@@ -2728,8 +2658,6 @@ body {
 
   transition: transform 0.6s ease;
 }
-
-
 
 .offer-overlay {
   position: absolute;
@@ -2748,8 +2676,6 @@ body {
   color: #fff;
   transition: background 0.4s ease;
 }
-
-
 
 .offer-tag {
   background: #c9a84c;
@@ -2783,8 +2709,6 @@ body {
   opacity: 0.9;
 }
 
-
-
 .offer-card:hover .offer-img {
   transform: scale(1.05);
 }
@@ -2795,7 +2719,6 @@ body {
       rgba(0, 0, 0, 0.2),
       transparent);
 }
-
 
 img {
   max-width: 100%;
@@ -2817,7 +2740,6 @@ img {
   align-items: center;
 }
 
-
 .contact-title {
   font-family: 'Playfair Display', serif;
   font-size: 54px;
@@ -2834,9 +2756,6 @@ img {
   position: relative;
   transform: translateY(2px);
 }
-
-
-
 
 .contact-title span {
   font-style: italic;
@@ -2879,13 +2798,11 @@ img {
   display: inline-block;
 }
 
-
 .contact-item {
   margin-bottom: 40px;
   padding-bottom: 25px;
   position: relative;
 }
-
 
 .contact-item::after {
   content: "";
@@ -2933,7 +2850,6 @@ img {
   margin-top: 4px;
 }
 
-
 .location-btn {
   display: inline-flex;
   align-items: center;
@@ -2950,7 +2866,6 @@ img {
 
   transition: all 0.3s ease;
 }
-
 
 .location-btn:hover {
   color: #ffffff;
@@ -3037,7 +2952,7 @@ img {
   flex-direction: column;
 }
 
-/* LABEL */
+/* label */
 .form-group label {
   font-size: 11px;
   letter-spacing: 2px;
@@ -3045,7 +2960,7 @@ img {
   margin-bottom: 8px;
 }
 
-/* INPUTS */
+/* inputs */
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -3055,27 +2970,25 @@ img {
 
   padding: 14px 16px;
 
-
   font-size: 14px;
   outline: none;
 
   transition: all 0.3s ease;
 }
 
-/* TEXTAREA BIGGER */
+/* textarea bigger */
 .form-group textarea {
   min-height: 120px;
   resize: none;
 }
 
-/* HOVER / FOCUS */
+/* hover / focus */
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: #c9a84c;
 }
 
-/* BUTTON */
 .contact-btn {
   width: 100%;
   margin-top: 20px;
@@ -3180,7 +3093,7 @@ textarea::placeholder {
   color: #c9a54c;
 }
 
-/* SOCIAL MEDIA BUTTONS & LINKS */
+/* social media buttons & links */
 .social-links,
 .social-icons {
   display: flex;
@@ -3217,7 +3130,7 @@ textarea::placeholder {
   fill: currentColor;
 }
 
-/* Authentic Brand Colors & Glow Effects on Hover */
+/* authentic brand colors & glow effects on hover */
 .social-links a.facebook:hover,
 .social-icons a.facebook:hover,
 .social-btn.facebook:hover {
@@ -3263,7 +3176,7 @@ textarea::placeholder {
   transform: scale(1.15);
 }
 
-/* COLUMNS */
+/* columns */
 .footer-col h4 {
   font-size: 12px;
   letter-spacing: 4px;
@@ -3335,8 +3248,7 @@ textarea::placeholder {
   color: #c9a44c;
 }
 
-/* Legacy mobile responsive block removed — all responsive styles are consolidated above */
-
+/* legacy mobile responsive block removed — all responsive styles are consolidated above */
 
 .exp {
   padding: 120px 40px;
@@ -3372,16 +3284,12 @@ textarea::placeholder {
   color: #3b6d96;
 }
 
-/* GRID */
-
 .exp-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
   gap: 30px;
 }
-
-/* CARD */
 
 .exp-card {
   background: #ffffff;
@@ -3399,15 +3307,11 @@ textarea::placeholder {
   border-color: #C9A84C;
 }
 
-/* ICON */
-
 .exp-icon {
   font-size: 42px;
 
   margin-bottom: 30px;
 }
-
-/* TITLE */
 
 .exp-card h3 {
   color: #111;
@@ -3419,8 +3323,6 @@ textarea::placeholder {
   line-height: 1.4;
 }
 
-/* TEXT */
-
 .exp-card p {
   color: #555;
 
@@ -3429,12 +3331,9 @@ textarea::placeholder {
   line-height: 2;
 }
 
-
 .mobile-only {
   display: none;
 }
-
-
 
 @media screen and (max-width:768px) {
 
@@ -3450,7 +3349,7 @@ textarea::placeholder {
     margin-bottom: 40px;
   }
 
-  /* MOBILE SLIDER */
+  /* mobile slider */
 
   .exp-grid {
 
@@ -3498,8 +3397,6 @@ textarea::placeholder {
     line-height: 1.9 !important;
   }
 
-
-
   .mobile-only {
     display: block;
 
@@ -3517,8 +3414,6 @@ textarea::placeholder {
   }
 
 }
-
-
 
 @keyframes swipeDirection {
 
@@ -3555,8 +3450,6 @@ textarea::placeholder {
     padding: 80px 24px !important;
   }
 
-  /* TITLE */
-
   .gallery h2 {
     font-size: 58px !important;
     line-height: 1.1 !important;
@@ -3564,7 +3457,7 @@ textarea::placeholder {
     margin-bottom: 55px !important;
   }
 
-  /* MAIN LAYOUT */
+  /* main layout */
 
   .gallery-grid {
     display: flex !important;
@@ -3573,7 +3466,7 @@ textarea::placeholder {
     gap: 24px !important;
   }
 
-  /* TOP BIG IMAGE */
+  /* top big image */
 
   .gallery-left {
     width: 100% !important;
@@ -3587,7 +3480,7 @@ textarea::placeholder {
     overflow: hidden;
   }
 
-  /* RIGHT SECTION */
+  /* right section */
 
   .gallery-right {
     display: flex !important;
@@ -3597,7 +3490,7 @@ textarea::placeholder {
     gap: 22px !important;
   }
 
-  /* SMALL CARDS */
+  /* small cards */
 
   .gallery-right .gallery-item {
 
@@ -3610,8 +3503,6 @@ textarea::placeholder {
     overflow: hidden;
   }
 
-  /* IMAGE */
-
   .gallery-item img {
     width: 100% !important;
     height: 100% !important;
@@ -3620,8 +3511,6 @@ textarea::placeholder {
 
     transition: 0.4s ease;
   }
-
-  /* TEXT */
 
   .gallery-item span {
 
@@ -3639,9 +3528,7 @@ textarea::placeholder {
 
 }
 
-/* =========================================
-   CULINARY SECTION
-========================================= */
+/* culinary section */
 
 .culinary {
   background: #001b33;
@@ -3666,9 +3553,7 @@ textarea::placeholder {
   gap: 80px;
 }
 
-/* =========================================
-   LEFT CONTENT
-========================================= */
+/* left content */
 
 .culinary-content {
   flex: 1;
@@ -3704,8 +3589,6 @@ textarea::placeholder {
   background: #caa24c;
 }
 
-/* HEADING */
-
 .culinary-content h2 {
 
   font-size: 78px;
@@ -3724,7 +3607,7 @@ textarea::placeholder {
   font-style: italic;
 }
 
-/* LINE */
+/* line */
 
 .culinary-line {
 
@@ -3735,8 +3618,6 @@ textarea::placeholder {
 
   margin-bottom: 35px;
 }
-
-/* TEXT */
 
 .culinary-text {
 
@@ -3749,15 +3630,13 @@ textarea::placeholder {
   max-width: 680px;
 }
 
-/* =========================================
-   TAGS
-========================================= */
+/* tags */
 
 .culinary-tags {
   margin-top: 40px;
 }
 
-/* TAG ROW */
+/* tag row */
 
 .culinary-tags-row {
 
@@ -3770,7 +3649,7 @@ textarea::placeholder {
   margin-bottom: 14px;
 }
 
-/* TAG */
+/* tag */
 
 .culinary-tags-row span {
 
@@ -3801,9 +3680,7 @@ textarea::placeholder {
   color: #001b33;
 }
 
-/* =========================================
-   RIGHT VISUAL
-========================================= */
+/* right visual */
 
 .culinary-visual {
 
@@ -3816,7 +3693,7 @@ textarea::placeholder {
   align-items: center;
 }
 
-/* CIRCLE WRAPPER */
+/* circle wrapper */
 
 .circle-wrapper {
 
@@ -3831,7 +3708,7 @@ textarea::placeholder {
   align-items: center;
 }
 
-/* ROTATING CIRCLE */
+/* rotating circle */
 
 .circle-rotating {
 
@@ -3850,7 +3727,7 @@ textarea::placeholder {
   animation: rotateWheel 14s linear infinite;
 }
 
-/* CENTER ICON */
+/* center icon */
 
 .center-icon {
 
@@ -3871,7 +3748,7 @@ textarea::placeholder {
   align-items: center;
 }
 
-/* ROTATION */
+/* rotation */
 
 @keyframes rotateWheel {
 
@@ -3885,9 +3762,7 @@ textarea::placeholder {
 
 }
 
-/* =========================================
-   MOBILE VIEW
-========================================= */
+/* mobile view */
 
 @media screen and (max-width:768px) {
 
@@ -3896,7 +3771,7 @@ textarea::placeholder {
     padding: 90px 24px !important;
   }
 
-  /* MAIN LAYOUT */
+  /* main layout */
 
   .culinary-container {
 
@@ -3907,14 +3782,12 @@ textarea::placeholder {
     gap: 55px !important;
   }
 
-  /* CONTENT */
+  /* content */
 
   .culinary-content {
 
     width: 100% !important;
   }
-
-  /* TITLE */
 
   .culinary-content h2 {
 
@@ -3925,8 +3798,6 @@ textarea::placeholder {
     margin-bottom: 28px !important;
   }
 
-  /* TEXT */
-
   .culinary-text {
 
     font-size: 17px !important;
@@ -3936,7 +3807,7 @@ textarea::placeholder {
     max-width: 100% !important;
   }
 
-  /* TAGS */
+  /* tags */
 
   .culinary-tags {
 
@@ -3997,7 +3868,7 @@ textarea::placeholder {
     font-size: 13px !important;
   }
 
-  /* CIRCLE */
+  /* circle */
 
   .culinary-visual {
 
@@ -4022,9 +3893,7 @@ textarea::placeholder {
 
 }
 
-/* =========================================
-   FEEDBACK SECTION
-========================================= */
+/* feedback section */
 
 .feedback {
   background: #f5f1e8;
@@ -4041,9 +3910,7 @@ textarea::placeholder {
   margin: auto;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/* header */
 
 .feedback-header {
 
@@ -4081,9 +3948,7 @@ textarea::placeholder {
   font-style: italic;
 }
 
-/* =========================================
-   CARDS LAYOUT
-========================================= */
+/* cards layout */
 
 .feedback-cards {
 
@@ -4093,10 +3958,6 @@ textarea::placeholder {
 
   gap: 34px;
 }
-
-/* =========================================
-   CARD
-========================================= */
 
 .feedback-card {
 
@@ -4126,7 +3987,7 @@ textarea::placeholder {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* STARS */
+/* stars */
 
 .stars {
 
@@ -4139,7 +4000,7 @@ textarea::placeholder {
   margin-bottom: 28px;
 }
 
-/* REVIEW TEXT */
+/* review text */
 
 .feedback-card p {
 
@@ -4150,9 +4011,7 @@ textarea::placeholder {
   line-height: 2;
 }
 
-/* =========================================
-   USER
-========================================= */
+/* user */
 
 .feedback-user {
 
@@ -4164,8 +4023,6 @@ textarea::placeholder {
 
   margin-top: 36px;
 }
-
-/* AVATAR */
 
 .avatar {
 
@@ -4186,8 +4043,6 @@ textarea::placeholder {
   font-size: 20px;
 }
 
-/* NAME */
-
 .feedback-user h4 {
 
   font-size: 18px;
@@ -4197,7 +4052,7 @@ textarea::placeholder {
   color: #000;
 }
 
-/* LOCATION */
+/* location */
 
 .feedback-user span {
 
@@ -4208,17 +4063,13 @@ textarea::placeholder {
   letter-spacing: 3px;
 }
 
-/* =========================================
-   SWIPE TEXT
-========================================= */
+/* swipe text */
 
 .feedback-swipe {
   display: none;
 }
 
-/* =========================================
-   MOBILE VIEW
-========================================= */
+/* mobile view */
 
 @media screen and (max-width:768px) {
 
@@ -4227,7 +4078,7 @@ textarea::placeholder {
     padding: 90px 20px !important;
   }
 
-  /* HEADER */
+  /* header */
 
   .feedback-header {
 
@@ -4241,7 +4092,7 @@ textarea::placeholder {
     line-height: 1.1 !important;
   }
 
-  /* MOBILE SLIDER */
+  /* mobile slider */
 
   .feedback-cards {
 
@@ -4264,8 +4115,6 @@ textarea::placeholder {
     display: none;
   }
 
-  /* CARD */
-
   .feedback-card {
 
     min-width: 300px !important;
@@ -4282,8 +4131,6 @@ textarea::placeholder {
     border-radius: 18px !important;
   }
 
-  /* TEXT */
-
   .feedback-card p {
 
     font-size: 17px !important;
@@ -4291,14 +4138,14 @@ textarea::placeholder {
     line-height: 2 !important;
   }
 
-  /* USER */
+  /* user */
 
   .feedback-user {
 
     margin-top: 32px !important;
   }
 
-  /* SWIPE TEXT */
+  /* swipe text */
 
   .feedback-swipe {
 
@@ -4335,10 +4182,8 @@ textarea::placeholder {
 
 }
 
-/* =========================================
-   OFFERS MOBILE VIEW ONLY
-   (DOES NOT TOUCH DESKTOP)
-========================================= */
+/* offers mobile view only
+   (does not touch desktop) */
 
 @media screen and (max-width:768px) {
 
@@ -4349,7 +4194,7 @@ textarea::placeholder {
     overflow: hidden !important;
   }
 
-  /* HEADER */
+  /* header */
 
   .offers-subtitle {
 
@@ -4371,7 +4216,7 @@ textarea::placeholder {
     text-align: center !important;
   }
 
-  /* STACK LAYOUT */
+  /* stack layout */
 
   .offers-grid {
 
@@ -4381,8 +4226,6 @@ textarea::placeholder {
 
     gap: 28px !important;
   }
-
-  /* CARD */
 
   .offer-card {
 
@@ -4402,13 +4245,13 @@ textarea::placeholder {
     overflow: hidden !important;
   }
 
-  /* REMOVE DARK HOVER EFFECT ONLY IN MOBILE */
+  /* remove dark hover effect only in mobile */
 
   .offer-card:hover .offer-img::after {
     opacity: 0 !important;
   }
 
-  /* CONTENT */
+  /* content */
 
   .offer-overlay {
 
@@ -4418,7 +4261,7 @@ textarea::placeholder {
     width: 85% !important;
   }
 
-  /* TAG */
+  /* tag */
 
   .offer-tag {
 
@@ -4430,8 +4273,6 @@ textarea::placeholder {
 
     margin-bottom: 16px !important;
   }
-
-  /* TITLE */
 
   .offer-overlay h3 {
 
@@ -4446,9 +4287,7 @@ textarea::placeholder {
 
 }
 
-/* =========================================
-   CONTACT SECTION
-========================================= */
+/* contact section */
 
 .contact {
   background: #001f3b;
@@ -4473,15 +4312,13 @@ textarea::placeholder {
   align-items: start;
 }
 
-/* =========================================
-   LEFT SIDE
-========================================= */
+/* left side */
 
 .contact-left {
   width: 100%;
 }
 
-/* SUBTITLE */
+/* subtitle */
 
 .contact-subtitle {
 
@@ -4493,8 +4330,6 @@ textarea::placeholder {
 
   margin-bottom: 30px;
 }
-
-/* TITLE */
 
 .contact-title {
 
@@ -4516,8 +4351,6 @@ textarea::placeholder {
   font-style: italic;
 }
 
-/* DIVIDER */
-
 .contact-divider {
 
   width: 110px;
@@ -4529,7 +4362,7 @@ textarea::placeholder {
   margin-bottom: 50px;
 }
 
-/* CONTACT BLOCK */
+/* contact block */
 
 .contact-block {
 
@@ -4561,8 +4394,6 @@ textarea::placeholder {
   margin-top: 8px;
 }
 
-/* SINGLE LINE */
-
 .contact-line {
 
   width: 100%;
@@ -4574,7 +4405,7 @@ textarea::placeholder {
   margin: 36px 0;
 }
 
-/* LOCATION BUTTON */
+/* location button */
 
 .location-btn {
 
@@ -4610,9 +4441,7 @@ textarea::placeholder {
   color: #001f3b;
 }
 
-/* =========================================
-   RIGHT SIDE FORM
-========================================= */
+/* right side form */
 
 .contact-right {
   width: 100%;
@@ -4637,8 +4466,6 @@ textarea::placeholder {
   backdrop-filter: blur(10px);
 }
 
-/* ROW */
-
 .form-row {
 
   display: grid;
@@ -4648,13 +4475,13 @@ textarea::placeholder {
   gap: 22px;
 }
 
-/* GROUP */
+/* group */
 
 .form-group {
   width: 100%;
 }
 
-/* LABEL */
+/* label */
 
 .form-group label {
 
@@ -4669,7 +4496,7 @@ textarea::placeholder {
   margin-bottom: 12px;
 }
 
-/* INPUTS */
+/* inputs */
 
 .contact-form input,
 .contact-form select,
@@ -4701,7 +4528,7 @@ textarea::placeholder {
   border-color: #d6b04f;
 }
 
-/* TEXTAREA */
+/* textarea */
 
 .contact-form textarea {
 
@@ -4710,15 +4537,13 @@ textarea::placeholder {
   resize: none;
 }
 
-/* PLACEHOLDER */
+/* placeholder */
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
 
   color: rgba(255, 255, 255, 0.45);
 }
-
-/* BUTTON */
 
 .contact-btn {
 
@@ -4750,9 +4575,7 @@ textarea::placeholder {
   transform: translateY(-2px);
 }
 
-/* =========================================
-   MOBILE VIEW ONLY
-========================================= */
+/* mobile view only */
 
 @media screen and (max-width:768px) {
 
@@ -4760,8 +4583,6 @@ textarea::placeholder {
 
     padding: 90px 22px !important;
   }
-
-  /* STACK */
 
   .contact-container {
 
@@ -4771,8 +4592,6 @@ textarea::placeholder {
 
     gap: 70px !important;
   }
-
-  /* TITLE */
 
   .contact-title {
 
@@ -4787,8 +4606,6 @@ textarea::placeholder {
 
     margin-bottom: 42px !important;
   }
-
-  /* BLOCK */
 
   .contact-block {
 
@@ -4811,14 +4628,14 @@ textarea::placeholder {
     line-height: 1.9 !important;
   }
 
-  /* SINGLE CLEAN LINE */
+  /* single clean line */
 
   .contact-line {
 
     margin: 34px 0 !important;
   }
 
-  /* LOCATION BUTTON */
+  /* location button */
 
   .location-btn {
 
@@ -4833,7 +4650,7 @@ textarea::placeholder {
     backdrop-filter: blur(8px) !important;
   }
 
-  /* FORM */
+  /* form */
 
   .contact-form {
 
@@ -4844,7 +4661,7 @@ textarea::placeholder {
     gap: 24px !important;
   }
 
-  /* STACK ROWS */
+  /* stack rows */
 
   .form-row {
 
@@ -4855,7 +4672,7 @@ textarea::placeholder {
     gap: 22px !important;
   }
 
-  /* LABEL */
+  /* label */
 
   .form-group label {
 
@@ -4866,7 +4683,7 @@ textarea::placeholder {
     margin-bottom: 10px !important;
   }
 
-  /* INPUTS */
+  /* inputs */
 
   .contact-form input,
   .contact-form select,
@@ -4884,8 +4701,6 @@ textarea::placeholder {
     min-height: 150px !important;
   }
 
-  /* BUTTON */
-
   .contact-btn {
 
     height: 58px !important;
@@ -4897,16 +4712,14 @@ textarea::placeholder {
 
 }
 
-/* HIDE EXTRA SECOND LINE */
+/* hide extra second line */
 
 .contact-left .contact-line:nth-child(6) {
   display: none !important;
 }
 
-/* =========================================
-   FOOTER MOBILE VIEW ONLY
-   DOES NOT AFFECT DESKTOP
-========================================= */
+/* footer mobile view only
+   does not affect desktop */
 
 @media screen and (max-width:768px) {
 
@@ -4917,9 +4730,7 @@ textarea::placeholder {
     overflow: hidden !important;
   }
 
-  /* ======================================
-     MAIN LAYOUT
-  ====================================== */
+  /* main layout */
 
   .footer-container {
 
@@ -4930,9 +4741,7 @@ textarea::placeholder {
     gap: 55px !important;
   }
 
-  /* ======================================
-     LEFT SECTION
-  ====================================== */
+  /* left section */
 
   .footer-left {
 
@@ -4963,7 +4772,7 @@ textarea::placeholder {
     margin: 0 auto !important;
   }
 
-  /* SOCIAL ICONS MOBILE */
+  /* social icons mobile */
 
   .social-icons,
   .social-links {
@@ -5012,9 +4821,7 @@ textarea::placeholder {
     transform: scale(0.92) !important;
   }
 
-  /* ======================================
-     FOOTER COLUMNS
-  ====================================== */
+  /* footer columns */
 
   .footer-col {
 
@@ -5050,9 +4857,7 @@ textarea::placeholder {
     color: rgba(255, 255, 255, 0.82) !important;
   }
 
-  /* ======================================
-     BOTTOM AREA
-  ====================================== */
+  /* bottom area */
 
   .footer-bottom {
 
@@ -5073,7 +4878,7 @@ textarea::placeholder {
     text-align: center !important;
   }
 
-  /* COPYRIGHT */
+  /* copyright */
 
   .footer-bottom p {
 
@@ -5086,7 +4891,7 @@ textarea::placeholder {
     margin: 0 !important;
   }
 
-  /* LINKS */
+  /* links */
 
   .footer-links {
 
@@ -5108,9 +4913,7 @@ textarea::placeholder {
 
 }
 
-/* =========================================
-   PROPERTY PAGE
-========================================= */
+/* property page */
 
 .property-page {
   background: #031c35;
@@ -5118,9 +4921,7 @@ textarea::placeholder {
   overflow: hidden;
 }
 
-/* =========================================
-   HERO
-========================================= */
+/* hero */
 
 .property-hero {
   height: 100vh;
@@ -5189,9 +4990,7 @@ textarea::placeholder {
   line-height: 1.9;
 }
 
-/* =========================================
-   ABOUT SECTION (BLUE)
-========================================= */
+/* about section (blue) */
 
 .property-about {
   padding: 140px 8%;
@@ -5245,9 +5044,7 @@ textarea::placeholder {
   margin-bottom: 28px;
 }
 
-/* =========================================
-   COMMON
-========================================= */
+/* common */
 
 .property-heading {
   text-align: center;
@@ -5275,9 +5072,7 @@ textarea::placeholder {
   color: #031c35;
 }
 
-/* =========================================
-   ROOMS SECTION (CREAM)
-========================================= */
+/* rooms section (cream) */
 
 .property-rooms {
   padding: 140px 8%;
@@ -5337,9 +5132,7 @@ textarea::placeholder {
   line-height: 2;
 }
 
-/* =========================================
-   DINING SECTION
-========================================= */
+/* dining section */
 
 .property-dining {
   padding: 140px 8%;
@@ -5408,9 +5201,7 @@ textarea::placeholder {
   max-width: 620px;
 }
 
-/* =========================================
-   PREMIUM AMENITIES
-========================================= */
+/* premium amenities */
 
 .property-amenities {
   padding: 160px 8%;
@@ -5425,7 +5216,7 @@ textarea::placeholder {
   overflow: hidden;
 }
 
-/* GOLDEN GLOW */
+/* golden glow */
 
 .property-amenities::before {
   content: "";
@@ -5448,8 +5239,6 @@ textarea::placeholder {
   z-index: 0;
 }
 
-/* HEADING */
-
 .property-amenities .property-heading {
   position: relative;
 
@@ -5466,8 +5255,6 @@ textarea::placeholder {
   margin-top: 18px;
 }
 
-/* GRID */
-
 .property-amenities-grid {
   position: relative;
 
@@ -5479,8 +5266,6 @@ textarea::placeholder {
 
   gap: 32px;
 }
-
-/* CARDS */
 
 .property-amenities-grid div {
   background:
@@ -5511,7 +5296,7 @@ textarea::placeholder {
   transition: 0.45s ease;
 }
 
-/* HOVER */
+/* hover */
 
 .property-amenities-grid div:hover {
   transform:
@@ -5529,7 +5314,7 @@ textarea::placeholder {
     0 25px 60px rgba(0, 0, 0, 0.28);
 }
 
-/* MOBILE */
+/* mobile */
 
 @media(max-width:768px) {
 
@@ -5556,9 +5341,7 @@ textarea::placeholder {
   }
 }
 
-/* =========================================
-   GALLERY SECTION
-========================================= */
+/* gallery section */
 
 .property-gallery {
   padding: 140px 8%;
@@ -5596,9 +5379,7 @@ textarea::placeholder {
     scale(1.03) translateY(-6px);
 }
 
-/* =========================================
-   PREMIUM LOCATION SECTION
-========================================= */
+/* premium location section */
 
 .property-location {
   position: relative;
@@ -5621,7 +5402,7 @@ textarea::placeholder {
       #0a315d 100%);
 }
 
-/* GOLDEN GLOW */
+/* golden glow */
 
 .property-location::before {
   content: "";
@@ -5676,8 +5457,6 @@ textarea::placeholder {
   margin-bottom: 48px;
 }
 
-/* BUTTON */
-
 .property-location-left a {
   display: inline-flex;
 
@@ -5723,8 +5502,6 @@ textarea::placeholder {
     0 20px 60px rgba(212, 175, 87, 0.28);
 }
 
-/* MAP */
-
 .property-location-right iframe {
   width: 100%;
 
@@ -5752,9 +5529,7 @@ textarea::placeholder {
     translateY(-10px) scale(1.01);
 }
 
-/* =========================================
-   CTA
-========================================= */
+/* cta */
 
 .property-cta {
   position: relative;
@@ -5851,9 +5626,7 @@ textarea::placeholder {
     0 25px 60px rgba(212, 175, 87, 0.4);
 }
 
-/* =========================================
-   MOBILE
-========================================= */
+/* mobile */
 
 @media(max-width:768px) {
 
@@ -5933,9 +5706,7 @@ textarea::placeholder {
   }
 }
 
-/* ===========================
-   MOBILE PROPERTIES
-=========================== */
+/* mobile properties */
 
 @media (max-width:768px) {
 
@@ -6019,10 +5790,7 @@ textarea::placeholder {
   }
 }
 
-
-/* ===========================
-        EVENTS SECTION
-=========================== */
+/* events section */
 
 .events-section {
   background: #f8f3ea;
@@ -6071,9 +5839,7 @@ textarea::placeholder {
   margin: 60px auto;
 }
 
-/* ===========================
-      CONTENT SECTION
-=========================== */
+/* content section */
 
 .events-content {
   display: grid;
@@ -6142,9 +5908,7 @@ textarea::placeholder {
   color: #fff;
 }
 
-/* ===========================
-        IMAGE GALLERY
-=========================== */
+/* image gallery */
 
 .events-gallery {
   display: grid;
@@ -6184,9 +5948,7 @@ textarea::placeholder {
   opacity: 1;
 }
 
-/* ===========================
-        RESPONSIVE
-=========================== */
+/* responsive */
 
 @media (max-width:992px) {
 
