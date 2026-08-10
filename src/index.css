@@ -11,6 +11,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ⚡ PERFORMANCE OPTIMIZATION: Eliminate 300ms mobile tap delay for INP */
+a,
+button,
+input,
+select,
+textarea,
+.btn-primary,
+.btn-outline,
+.menu-toggle,
+.nav-link,
+.property-card-link,
+.indicator-bar,
+.slide-dot,
+.stat-box {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
 section {
   scroll-margin-top: 90px;
 }

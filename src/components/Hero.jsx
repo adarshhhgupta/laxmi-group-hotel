@@ -23,6 +23,15 @@ function Hero() {
 
   return (
     <section id="hero" className="hero">
+      {/* Hidden high-priority image hint for browser LCP preloader */}
+      <img
+        src={img1}
+        alt=""
+        fetchPriority="high"
+        aria-hidden="true"
+        style={{ display: "none" }}
+      />
+
       {/* SLIDES */}
       <div className="hero-slides">
         {slides.map((s, i) => (
