@@ -11,23 +11,32 @@ function Properties() {
 
   useEffect(() => {
     const el = sectionRef.current;
+    if (!el) return;
+
+    const gridEl = el.querySelector(".properties-grid");
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          el.classList.add("show");
+        if (entry.isIntersecting || entry.boundingClientRect.top < window.innerHeight) {
+          if (gridEl) gridEl.classList.add("show");
+          else el.classList.add("show");
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.05, rootMargin: "100px 0px 0px 0px" }
     );
 
-    if (el) observer.observe(el);
+    observer.observe(el);
+
+    // Instant check if section is already in or near viewport
+    if (el.getBoundingClientRect().top < window.innerHeight + 100) {
+      if (gridEl) gridEl.classList.add("show");
+    }
 
     return () => observer.disconnect();
   }, []);
 
   return (
-    <section id="properties" className="properties">
+    <section id="properties" className="properties" ref={sectionRef}>
       <div className="properties-container">
 
         {/* HEADER */}
