@@ -29,6 +29,34 @@ textarea,
   -webkit-tap-highlight-color: transparent;
 }
 
+/* ⚡ GPU HARDWARE ACCELERATION (60fps/120fps zero frame drop UI) */
+.navbar,
+.slide,
+.about-slide-img,
+.property-card,
+.exp-card,
+.gallery-card,
+.feedback-card,
+.offer-card,
+.about__card-blue,
+.about__card-gold,
+.about__badge {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* ⚡ DEFERRED OFF-SCREEN RENDERING (Eliminates scroll stutter on long pages) */
+.experiences,
+.gallery,
+.culinary,
+.feedback,
+.offers,
+.contact,
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 800px;
+}
+
 section {
   scroll-margin-top: 90px;
 }
